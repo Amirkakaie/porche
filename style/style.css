@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  max-width: 425px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px rgb(227, 228, 229);
+}
+header .profile {
+  width: 45px;
+}
+header button {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: none;
+  background-color: transparent;
+}
+header button .ham-line {
+  width: 25px;
+  height: 1.5px;
+  background-color: #000000;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.hero .porche-911 {
+  width: 170px;
+  opacity: 40%;
+  z-index: -1;
+}
+.hero .porche-hero {
+  width: 400px;
+}
+
+.price .tabs {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 20px;
+}
+.price .tabs h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.price .tabs .coupe {
+  border-bottom: solid #000000 2px;
+  padding-bottom: 5px;
+}
+.price .model-and-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 20px;
+}
+.price .model-and-price h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.price .model-and-price p {
+  background-color: rgba(194, 188, 188, 0.6117647059);
+  padding: 2px 10px 2px 10px;
+  border-radius: 8px;
+}
+.price .model-and-price h3 {
+  font-weight: 500;
+}
+.price .btns {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.price .btns button {
+  width: 300px;
+  padding: 15px 0px 15px 0px;
+  background-color: transparent;
+  border: #000000 solid 1.5px;
+  border-radius: 8px;
+}
+.price .btns .model {
+  background-color: #000000;
+  border: none;
+  color: #ffffff;
+}
+.price .tozi {
+  padding-top: 30px;
+}
+.price .tozi p {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
