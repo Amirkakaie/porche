@@ -142,3 +142,37 @@ header{
 
 
 
+.detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    flex-direction: column;
+    img{
+        width: 350px;
+    }
+    .speed{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        .speed-details{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            h3{
+                font-size: 24px;
+            }
+            p{
+                color: #6b6d70;
+            }
+        }
+    }
+}
+
+
+
