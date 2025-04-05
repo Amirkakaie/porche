@@ -19,23 +19,35 @@ header{
     align-items: center;
     padding-top: 20px;
     padding-bottom: 10px;
-    border-bottom: solid 1px rgb(227, 228, 229);
+
+    .pc-logo{
+        display: none;
+    }
 
     .profile{
         width: 45px;
     }
 
+
     button{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+        
         border: none;
         background-color: transparent;
+        display: flex;
+        gap: 20px;
 
-        .ham-line{
-            width: 25px;
-            height: 1.5px;
-            background-color: #000000;
+        .ham{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .ham-line{
+                width: 25px;
+                height: 1.5px;
+                background-color: #000000;
+            }
+        }
+        p{
+            display: none;
         }
     }
 
@@ -44,6 +56,17 @@ header{
 
 }
 
+hr{
+    width: 100%;
+
+    position: absolute;
+    margin:  0 auto;
+    left: 0;
+    top:80px ;
+    right: 0;
+    background-color: rgb(227, 228, 229);
+    height: 1px;
+}
 
 .hero{
 
@@ -82,6 +105,9 @@ header{
         .coupe{
             border-bottom: solid #000000 2px;
             padding-bottom: 5px;
+            .pc{
+                display: none;
+            }
         }
     }
 
@@ -171,8 +197,81 @@ header{
                 color: #6b6d70;
             }
         }
+
+        button{
+            background-color: transparent;
+            padding: 16px 30px 16px 30px;
+            border-radius: 6px;
+            width: 380px;
+        }
     }
 }
 
 
+@media only screen and (min-width: 650px){
+
+    main{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    header{
+         
+        .logo{
+            display: none;
+        }
+        .pc-logo{
+            font-size: 25px;
+            display: flex;
+        }
+        button{
+            
+            align-items: center;
+            p{
+                display: flex;
+            }
+        }
+        
+    }
+
+    .hero{
+        .porche-911{
+            width: 400px;
+            opacity: 14%;
+            z-index: -1;
+        }
+        .porche-hero{
+            width: 800px;
+        }
+    }
+
+    .price{
+        .tabs{
+
+            .pc{
+                display: block;
+            }
+        }
+        .model-and-price{
+
+            h2{
+                font-size: 46px;
+                font-weight: 300;
+            }
+        }
+        .btns{
+            flex-direction: row;
+            padding-top: 40px;
+        }
+        .tozi{
+            padding-top: 40px;
+        }
+    }
+
+    .datail{
+        display: flex;
+       flex-direction:row;
+
+    }
+
+}
 

@@ -20,22 +20,42 @@ header {
   align-items: center;
   padding-top: 20px;
   padding-bottom: 10px;
-  border-bottom: solid 1px rgb(227, 228, 229);
+}
+header .pc-logo {
+  display: none;
 }
 header .profile {
   width: 45px;
 }
 header button {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  gap: 20px;
+}
+header button .ham {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  border: none;
-  background-color: transparent;
 }
-header button .ham-line {
+header button .ham .ham-line {
   width: 25px;
   height: 1.5px;
   background-color: #000000;
+}
+header button p {
+  display: none;
+}
+
+hr {
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  top: 80px;
+  right: 0;
+  background-color: rgb(227, 228, 229);
+  height: 1px;
 }
 
 .hero {
@@ -68,6 +88,9 @@ header button .ham-line {
 .price .tabs .coupe {
   border-bottom: solid #000000 2px;
   padding-bottom: 5px;
+}
+.price .tabs .coupe .pc {
+  display: none;
 }
 .price .model-and-price {
   display: flex;
@@ -144,4 +167,56 @@ header button .ham-line {
 }
 .detail .speed .speed-details p {
   color: #6b6d70;
+}
+.detail .speed button {
+  background-color: transparent;
+  padding: 16px 30px 16px 30px;
+  border-radius: 6px;
+  width: 380px;
+}
+
+@media only screen and (min-width: 650px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  header .logo {
+    display: none;
+  }
+  header .pc-logo {
+    font-size: 25px;
+    display: flex;
+  }
+  header button {
+    align-items: center;
+  }
+  header button p {
+    display: flex;
+  }
+  .hero .porche-911 {
+    width: 400px;
+    opacity: 14%;
+    z-index: -1;
+  }
+  .hero .porche-hero {
+    width: 800px;
+  }
+  .price .tabs .pc {
+    display: block;
+  }
+  .price .model-and-price h2 {
+    font-size: 46px;
+    font-weight: 300;
+  }
+  .price .btns {
+    flex-direction: row;
+    padding-top: 40px;
+  }
+  .price .tozi {
+    padding-top: 40px;
+  }
+  .datail {
+    display: flex;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=style.css.map */
