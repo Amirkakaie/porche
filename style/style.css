@@ -175,6 +175,35 @@ hr {
   width: 380px;
 }
 
+.hamber-menu {
+  display: none;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 130vh;
+  gap: 30px;
+}
+.hamber-menu button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: right;
+}
+.hamber-menu ul {
+  list-style: none;
+}
+.hamber-menu ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  padding: 20px 10px 20px 10px;
+}
+.hamber-menu ul li img {
+  width: 45px;
+}
+
 @media only screen and (min-width: 650px) {
   main {
     max-width: 1200px;
@@ -215,8 +244,18 @@ hr {
   .price .tozi {
     padding-top: 40px;
   }
-  .datail {
-    display: flex;
-    flex-direction: row;
+  .detail {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 60px;
+  }
+  .detail .speed {
+    gap: 40px;
+  }
+  .detail .speed .speed-details h3 {
+    font-size: 30px;
+  }
+  .detail .speed button {
+    font-size: 17px;
   }
 }/*# sourceMappingURL=style.css.map */

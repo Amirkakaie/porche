@@ -205,7 +205,39 @@ hr{
             width: 380px;
         }
     }
+
 }
+
+.hamber-menu{
+    display: none;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+    gap: 30px;
+    button{
+        background-color: transparent;
+        border: none;
+        display: flex;
+        justify-content: right;
+    }
+    ul{
+        list-style: none;
+        li{
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 22px;
+            padding: 20px 10px 20px 10px;
+            img{
+                width: 45px;
+            }
+        }
+    }
+}
+
 
 
 @media only screen and (min-width: 650px){
@@ -267,10 +299,24 @@ hr{
         }
     }
 
-    .datail{
-        display: flex;
-       flex-direction:row;
+    .detail{
+        
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 60px;
+        
+        .speed{
+            gap: 40px;
+            .speed-details{
 
+                h3{
+                    font-size: 30px;
+                }
+            }
+            button{
+                font-size: 17px;
+            }
+        }
     }
 
 }
