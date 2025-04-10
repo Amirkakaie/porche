@@ -102,6 +102,9 @@ hr{
             font-size: 18px;
             font-weight: 400;
         }
+        .pc{
+            display: none;
+        }
         .coupe{
             border-bottom: solid #000000 2px;
             padding-bottom: 5px;
@@ -210,12 +213,10 @@ hr{
 
 .hamber-menu{
     display: none;
-    z-index: 1;
+    z-index: auto;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: 130vh;
-    gap: 30px;
+    
+    
     button{
         background-color: transparent;
         border: none;
@@ -237,6 +238,39 @@ hr{
         }
     }
 }
+
+
+.learn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px 20px 40px; 
+    flex-direction:column ;
+    h2{
+        text-align: center;
+        padding-top:40px ;
+        padding-bottom: 40px;
+    }
+    .carrena-911{
+        width: 90px;
+    }
+    .learn-911{
+        width: 320px;
+        padding-top: 60px;
+        border-radius: 10px ;
+    }
+
+    h3{
+        margin-right: 80px;
+        padding-top: 30px ;
+        font-size: 25px;
+    }
+    p{
+        margin-left: 20px;
+        padding-top: 20px;
+    }
+}
+
 
 
 
@@ -304,7 +338,10 @@ hr{
         flex-direction: row-reverse;
         align-items: center;
         gap: 60px;
-        
+        padding-top: 60px;
+        img{
+            width: 500px;
+        }
         .speed{
             gap: 40px;
             .speed-details{

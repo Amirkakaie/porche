@@ -85,6 +85,9 @@ hr {
   font-size: 18px;
   font-weight: 400;
 }
+.price .tabs .pc {
+  display: none;
+}
 .price .tabs .coupe {
   border-bottom: solid #000000 2px;
   padding-bottom: 5px;
@@ -177,12 +180,8 @@ hr {
 
 .hamber-menu {
   display: none;
-  z-index: 1;
+  z-index: auto;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: 130vh;
-  gap: 30px;
 }
 .hamber-menu button {
   background-color: transparent;
@@ -202,6 +201,36 @@ hr {
 }
 .hamber-menu ul li img {
   width: 45px;
+}
+
+.learn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px 20px 40px;
+  flex-direction: column;
+}
+.learn h2 {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.learn .carrena-911 {
+  width: 90px;
+}
+.learn .learn-911 {
+  width: 320px;
+  padding-top: 60px;
+  border-radius: 10px;
+}
+.learn h3 {
+  margin-right: 80px;
+  padding-top: 30px;
+  font-size: 25px;
+}
+.learn p {
+  margin-left: 20px;
+  padding-top: 20px;
 }
 
 @media only screen and (min-width: 650px) {
@@ -248,6 +277,10 @@ hr {
     flex-direction: row-reverse;
     align-items: center;
     gap: 60px;
+    padding-top: 60px;
+  }
+  .detail img {
+    width: 500px;
   }
   .detail .speed {
     gap: 40px;

@@ -1,9 +1,23 @@
-$(document).ready(function () {
-    $("#humbtn").click(function(){
+$(document).ready(function(){
 
-        $("hamber-menu").fadeToggle(1000)
+    $("#hambtn").click(function(){
 
+        $("#humber-menu").fadeIn(1000)
+        
 
     })
-    
+
+
+})
+
+$(document).ready(function(){
+
+    $("#hambtn-out").click(function(){
+
+        $("#humber-menu").fadeOut(1000)
+        
+
+    })
+
+
 })
